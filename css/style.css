@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    
+}
+
+ul
+{
+    display: flex;
+
+}
+
+ul li
+{
+    list-style: none; /*r removes dots*/
+    padding: 19px 13px;
+}
+
+ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover
+{
+    color: rgb(98, 147, 238);
+}
+
+main
+{
+    min-height: 90vh;
+    padding: 2px;
+}
+
+.logo img
+{
+    width: 15px;
+    filter: invert(1);
+}
+
+#resultCont div::first-letter
+{
+    text-transform: uppercase;
+}
+
+footer
+{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    /* background-color: azure; */
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+input[type="text"]
+{
+    min-width: 50vw;
+    padding: 3px 12px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-size: 20px;
+}
+.container h1
+{
+    padding: 12px 0;
+}
+
+.btn
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 9px 12px;
+    border: solid white;
+    text-shadow: blur;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+@media only screen and (max-width : 600px)
+{
+    .container
+    {
+        font-size: 12px;
+    }
+
+    nav
+    {
+        flex-direction: column;
+    }
+
+    .logo
+    {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span
+    {
+        font-size: 20px;
+    }
+    
+    .logo img
+    {
+        width: 15px;
+        filter: invert(1);
+    }
+}
+
